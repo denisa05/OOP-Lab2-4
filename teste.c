@@ -213,6 +213,12 @@ void test_sortare_crescatoare_dupa_pret() {
     Produs p = lista_sortata->elems[0];
     assert(p.id == 2);
 
+    destroy(lista_sortata);
+    lista_sortata = sortare(lista, 0, (sorteaza)compararePret, (sorteaza)comparareCantitate);
+
+    p = lista_sortata->elems[0];
+    assert(p.id == 1);
+
     destroy(lista);
     destroy(lista_sortata);
 }

@@ -7,7 +7,7 @@
 
 int main() {
 	testAll();
-	run();
+	//run();
 
 	if (_CrtDumpMemoryLeaks())
 		printf("\nMEMORY LEAKS\n");

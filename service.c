@@ -115,24 +115,7 @@ int comparareCantitate(Produs* m1, Produs* m2) {
 
 MyList* sortare(MyList* lista, int crescator, sorteaza cmp1, sorteaza cmp2) {
 	MyList* list = copyList(lista);
-	/*
-	for (int i = 0; i < list->lg - 1; i++) {
-		for (int j = i + 1; j < list->lg; j++) {
-			if ((crescator && cmp1(list->elems[i], list->elems[j]) == 1) ||
-				(!crescator && cmp1(list->elems[i], list->elems[j]) == 0)) {
-				TElem temporar = list->elems[i];
-				list->elems[i] = list->elems[j];
-				list->elems[j] = temporar;
-			}
-			else if ((crescator && cmp2(list->elems[i], list->elems[j]) == 1) ||
-				(!crescator && cmp2(list->elems[i], list->elems[j]) == 0)) {
-				TElem temporar = list->elems[i];
-				list->elems[i] = list->elems[j];
-				list->elems[j] = temporar;
-			}
-		}
-	}
-	*/
+
 	for (int i = 0; i < list->lg - 1; i++) {
 		for (int j = i + 1; j < list->lg; j++) {
 			int cmp_result;
